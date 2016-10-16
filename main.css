@@ -86,19 +86,11 @@ a.animated-button.thar-one:before {
 	left: 0px;
 	top: 0px;
 	height: 0px;
-	width: 100%;
+	width: 0px;
 	z-index: -1;
 	content: '';
 	color: #000 !important;
 	background: #F7CA18;
-	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
-}
-a.animated-button.thar-two {
-	color: #fff;
-	cursor: pointer;
-	display: block;
-	position: relative;
-	border: 2px solid #F7CA18;
 	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
