@@ -1,6 +1,7 @@
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
+/* Global Button Styles */
 a.animated-button:link, a.animated-button:visited {
 	position: relative;
 	display: block;
@@ -62,6 +63,9 @@ a.animated-button:link, a.animated-button:visited {
 	transition: all 1s ease;
 }
 
+
+/* Thar Buttons */
+
 a.animated-button.thar-one {
 	color: #fff;
 	cursor: pointer;
@@ -86,7 +90,7 @@ a.animated-button.thar-one:before {
 	left: 0px;
 	top: 0px;
 	height: 0px;
-	width: 0px;
+	width: 100%;
 	z-index: -1;
 	content: '';
 	color: #000 !important;
@@ -94,21 +98,6 @@ a.animated-button.thar-one:before {
 	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
-header .row,
-footer .row {
-  display: flex;
-  align-items: center;
-}
-
-header h1 {
-  font-weight: 700;
-  margin: 0;
-}
-
-header nav {
-  display: flex;
-  justify-content: flex-end;
-}
 
 .nav a  {
   color: #5a5a5a;
@@ -123,7 +112,7 @@ header nav {
 }
 
 .jumbotron {
-  background-image:url('http://content.wallpapers-room.com/resolutions/1440x900/B/Wallpapers-room_com___Black_Background_Set_Metal_Hole_by_iAmFreeman_1440x900.jpg');
+  background-color:#353535;
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -161,27 +150,5 @@ header nav {
 }
 
 .button {
-}
-
-#sub-top-dark, #sub-top-light {
-  height: 40px;
-  font-size: 12px;
-}
-#sub-top-dark i, #sub-top-light i {
-  margin-right: 4px;
-  font-size: 14px;
-}
-#sub-top-dark .top-contacts, #sub-top-dark .top-shop, #sub-top-light .top-contacts, #sub-top-light .top-shop {
-  padding-top: 10px;
-}
-#sub-top-dark .top-contacts, #sub-top-light .top-contacts {
-  float: left;
-}
-#sub-top-dark .top-contacts div, #sub-top-light .top-contacts div {
-  display: inline;
-  margin-right: 12px;
-}
-#sub-top-dark .top-shop, #sub-top-light .top-shop {
-  float: right;
 }
 
