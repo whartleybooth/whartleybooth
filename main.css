@@ -162,3 +162,26 @@ header nav {
 
 .button {
 }
+
+#sub-top-dark, #sub-top-light {
+  height: 40px;
+  font-size: 12px;
+}
+#sub-top-dark i, #sub-top-light i {
+  margin-right: 4px;
+  font-size: 14px;
+}
+#sub-top-dark .top-contacts, #sub-top-dark .top-shop, #sub-top-light .top-contacts, #sub-top-light .top-shop {
+  padding-top: 10px;
+}
+#sub-top-dark .top-contacts, #sub-top-light .top-contacts {
+  float: left;
+}
+#sub-top-dark .top-contacts div, #sub-top-light .top-contacts div {
+  display: inline;
+  margin-right: 12px;
+}
+#sub-top-dark .top-shop, #sub-top-light .top-shop {
+  float: right;
+}
+
