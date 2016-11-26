@@ -153,12 +153,11 @@ a.animated-button.thar-one:before {
 .button {
 }
 
-li.sub-navigation-home-news a
-{
-    margin: 40px 0px;
+
+.example li a {
+  margin: 40px 0px;
     list-style: none;
 }
-
 
 
 
