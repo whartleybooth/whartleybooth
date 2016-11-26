@@ -153,9 +153,7 @@ a.animated-button.thar-one:before {
 .button {
 }
 
-#test {
-li{
-  margin: 20px 0;
-}
+#test li{
+    margin: 30px 0;
 }
 
