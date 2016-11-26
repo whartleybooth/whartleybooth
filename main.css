@@ -153,7 +153,10 @@ a.animated-button.thar-one:before {
 .button {
 }
 
-
+.testttt li{
+    margin: 30px 0;
+    list-style: none;
+}
 
 
 
