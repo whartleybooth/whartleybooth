@@ -117,11 +117,13 @@ a.animated-button.thar-one:before {
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 40px;
 }
 
 .jumbotron .container {
   position: relative;
   top:100px;
+
 }
 
 .jumbotron h1 {
@@ -134,7 +136,6 @@ a.animated-button.thar-one:before {
 .jumbotron p {
   font-size: 20px;
   color: #fff;
-  margin: 40px;
 }
 
 .learn-more {
