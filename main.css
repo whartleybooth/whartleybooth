@@ -1,3 +1,6 @@
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
 
 /* Global Button Styles */
 a.animated-button:link, a.animated-button:visited {
@@ -97,7 +100,7 @@ a.animated-button.thar-one:before {
 }
 
 
-.nav a {
+.nav a  {
   color: #5a5a5a;
   font-size: 11px;
   font-weight: bold;
