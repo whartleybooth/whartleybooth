@@ -150,11 +150,10 @@ a.animated-button.thar-one:before {
 .button {
 }
 
-.col-md-2-test li  {
+li.sub-navigation-home-news a {
     margin: 40px 0px;
     list-style: none;
 }
-
 
 
 
