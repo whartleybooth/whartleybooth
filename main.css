@@ -134,6 +134,7 @@ a.animated-button.thar-one:before {
 .jumbotron p {
   font-size: 20px;
   color: #fff;
+  margin: 40px;
 }
 
 .learn-more {
@@ -151,10 +152,6 @@ a.animated-button.thar-one:before {
 }
 
 .button {
-}
-
-.section {
-	margin: 40px;
 }
 
 
