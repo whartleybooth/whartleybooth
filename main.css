@@ -153,8 +153,8 @@ a.animated-button.thar-one:before {
 .button {
 }
 
-li.imagess{
-    margin: 40px 0;
+li {
+    margin: 40px 0px;
     list-style: none;
 }
 
