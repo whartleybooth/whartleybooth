@@ -99,6 +99,10 @@ a.animated-button.thar-one:before {
 	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
 
 .nav a  {
   color: #5a5a5a;
