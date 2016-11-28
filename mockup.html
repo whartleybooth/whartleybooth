@@ -12,6 +12,8 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 
   <link rel="stylesheet" href="main.css" >
     
@@ -67,7 +69,25 @@
                         <h3>Atlas App</h3>
                         <p>Activate the Atlas Application for a Marin Client Account.</p>
                         <p>
-                            <a href="#" class="btn btn-primary">Learn More</a> <a href="#" class="btn btn-default">Enable</a>
+                            <a href="#" class="btn btn-primary">Learn More</a> 
+<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Enable</button>
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>This is a large modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
                         </p>
                     </div>
                 </div>
