@@ -114,9 +114,10 @@ body {
 
 .jumbotron {
   background-color:#353535;
-  height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .jumbotron .container {
