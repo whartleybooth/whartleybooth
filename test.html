@@ -17,15 +17,7 @@
     <link rel="stylesheet" href="main.css">
     <script src="https://use.fontawesome.com/d7e44474a5.js"></script>
 
-    <script>
-    function scrollToAnchor(aid){
-    var aTag = $("a[name='"+ aid +"']");
-    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
-}
 
-$("#link").click(function() {
-   scrollToAnchor('id1');
-});
 </script>
     
   </head>
@@ -62,6 +54,16 @@ $("#link").click(function() {
   </div>
 </div>
     </div> 
+
+        <script>
+    function scrollToAnchor(aid){
+    var aTag = $("a[name='"+ aid +"']");
+    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+}
+
+$("#link").click(function() {
+   scrollToAnchor('id1');
+});
 
 <a name="id1">
     <div class="container" id="about"> 
