@@ -16,10 +16,19 @@
     
     <link rel="stylesheet" href="main.css">
     <script src="https://use.fontawesome.com/d7e44474a5.js"></script>
+
+
+</script>
     
   </head>
 
   <body>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 
   <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -44,7 +53,7 @@
       <div class="container">
         <h1>DEVELOPER.</h1>
      <div class="row">
-    <div class="col-md-3"><a href="#" class="btn btn-sm animated-button thar-one">ABOUT</a> </div>
+    <div class="col-md-3"><a id="link" href="#" class="btn btn-sm animated-button thar-one">ABOUT</a> </div>
     <div class="col-md-3"><a href="#" class="btn btn-sm animated-button thar-one">CONTACT</a></div>
     <div class="col-sm-3"> </div>
     <div class="col-md-3"> </div>
@@ -52,9 +61,29 @@
 </div>
     </div> 
 
-    <div class="container"> 
-      <div class="col-md-2"><h4 style="color:rgb(87, 156, 216);">ABOUT</h4></div>
+        <script>
+    function scrollToAnchor(aid){
+    var aTag = $("a[name='"+ aid +"']");
+    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+}
+
+$("#link").click(function() {
+   scrollToAnchor('id1');
+});</script>
+
+
+    <div class="container" id="about"> 
+      <br>
+           <br>
+            <br>
+            <br>
+            <br>
+
+      
+      <div class="col-md-2"><h4 style="color:rgb(87, 156, 216);"><a name="id1">ABOUT</a></h4></div>
+
         <div class="col-md-8">
+
           <p class="intro">Lorem ipsum dolor sit amet, varius quam, sed erat. In in velit morbi, vestibulum tortor nonummy ipsum. Libero quisque nunc, adipiscing et pharetra, in sodales quam vestibulum vel faucibus cras, malesuada massa suspendisse enim maecenas. Viverra erat adipisicing at orci, massa a augue vel quis blandit a, amet erat quis. Id ut enim faucibus scelerisque, posuere amet ligula ut turpis, justo maecenas, id integer orci, a nulla nisl nulla integer augue. Molestie ac dictum, ratione justo felis pede duis, egestas at dolores in felis. Ut ultricies faucibus, ligula lorem senectus dapibus nonummy rutrum, tincidunt eu sem pede tempus, conubia et natoque. Nulla rhoncus facilisis ipsum quam erat. Massa nisl commodo dolor id nisl tincidunt, id libero netus volutpat euismod aliquam vehicula, vitae sociosqu nibh nec ornare suspendisse, vivamus amet nisl diam eu bibendum. Ipsum at nec et. Quis sapien eget, nonummy luctus quisque nibh, arcu interdum vehicula qui quis nullam eu. A eget odio, vestibulum nulla nulla erat etiam nunc, maecenas nec cras eius tellus platea ultricies, eleifend habitasse nonummy sed felis erat, adipiscing id arcu condimentum.</p></div>
           <div class="col-md-2">
             <ul>
