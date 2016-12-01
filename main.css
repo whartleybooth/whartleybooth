@@ -124,16 +124,12 @@ body {
 .jumbotron .container {
   position: relative;
   top:100px;
+  text-align: center;
+  font: 0/0 a;     
 }
 
 
-.vertical-center {
-  height:100vh;
-  width:100vh;
 
-  text-align: center;  /* align the inline(-block) elements horizontally */
-
-}
 
 
 .jumbotron h1 {
