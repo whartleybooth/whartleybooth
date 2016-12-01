@@ -166,8 +166,13 @@ body {
 #about {
 	  height: 100vh;
 	  margin: 60px;
-	  font-family: 'Roboto', sans-serif;
 }
 
 .top-buffer { margin-top: 80px;}
+
+.about {
+
+	font-family: 'Roboto', sans-serif;
+
+}
 
