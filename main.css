@@ -117,7 +117,9 @@ body {
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  align-items: center;
+  position: absolute;
+  top: 50%;
+  left:50%;
 
 }
 
