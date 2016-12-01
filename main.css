@@ -123,7 +123,10 @@ body {
 
 .jumbotron .container {
   position: relative;
-
+   height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   font: 0/0 a;     
 }
