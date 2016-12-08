@@ -163,15 +163,12 @@ body {
 .button {
 }
 
-#about {
-	  height: 100vh;
-}
 
 .fullpage {
 	  height: 100vh;
 }
 
-.top-buffer { margin-top: 120px;}
+.top-buffer { margin-top: 140px;}
 
 .about {
 
