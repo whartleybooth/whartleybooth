@@ -177,11 +177,14 @@ body {
 }
 
 .user {
+  display: inline-block;
   width: 200px;
   height: 200px;
   border-radius: 50%;
   background-repeat: no-repeat;
-  float: left;
+  background-position: center center;
+  background-size: cover;
+  margin-left: -15px;
 }
 
 .one {
