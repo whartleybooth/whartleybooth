@@ -167,6 +167,10 @@ body {
 	  height: 100vh;
 }
 
+.fullpage {
+	  height: 100vh;
+}
+
 .top-buffer { margin-top: 120px;}
 
 .about {
