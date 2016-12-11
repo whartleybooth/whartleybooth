@@ -171,11 +171,7 @@ body {
 
 
 .about {
-	    color: #fff;
-  font-size: 14px;  
-  font-family: 'Roboto', sans-serif;
-  word-spacing: 6px;
-
+ font: normal 13px/29px 'museo_slab500', 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
    position: relative;
     -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
     -webkit-text-size-adjust: 100%;
