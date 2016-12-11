@@ -207,3 +207,8 @@ body {
 align: center;
  position: relative;
 }
+
+hr {
+    border: none;
+    height: 1px;
+    }
