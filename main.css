@@ -175,7 +175,10 @@ body {
   font-size: 14px;  
   font-family: 'Roboto', sans-serif;
   word-spacing: 6px;
-   font-weight: bold;
+
+   position: relative;
+    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
 
 }
 
