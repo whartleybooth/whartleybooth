@@ -175,6 +175,8 @@ body {
    position: relative;
     -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
     -webkit-text-size-adjust: 100%;
+    color:white;
+    font-style: italic;
 
 }
 
