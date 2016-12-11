@@ -185,7 +185,11 @@ body {
    margin-right:auto;
 }
 
-
+.center-block {
+   margin-left:auto;
+   margin-right:auto;
+   display:block;
+}
 
 
 #dimScreen
