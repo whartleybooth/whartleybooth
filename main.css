@@ -202,3 +202,8 @@ body {
     height: 100%;
     	  background-color: #fff;
 }
+
+.centering {
+align: center;
+ position: relative;
+}
