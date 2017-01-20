@@ -132,18 +132,24 @@ _mTrack.push(['processOrders']);
 
           <p class="about">
             
-   
 
-<object id="mediaplayer" classid="clsid:22d6f312-b0f6-11d0-94ab-0080c74c7e95" codebase="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#version=5,1,52,701" standby="loading microsoft windows media player components..." type="application/x-oleobject" width="320" height="310">
-<param name="filename" value="./test.wmv">
-     <param name="animationatstart" value="true">
-     <param name="transparentatstart" value="true">
-     <param name="autostart" value="true">
-     <param name="showcontrols" value="true">
-     <param name="ShowStatusBar" value="true">
-     <param name="windowlessvideo" value="true">
-     <embed src="./Apply.wmv" autostart="true" showcontrols="true" showstatusbar="1" bgcolor="white" width="320" height="310">
+
+<object width="325" height="250" type="video/x-ms-asf" url="video.wmv"
+data="video.wmv" classid="CLSID:6BF52A52-394A-11d3-B153-00C04F79FAA6">
+<param name="url" value="video.wmv">
+<param name="filename" value="video.wmv">
+<param name="autostart" value="1">
+<param name="uiMode" value="full">
+<param name="autosize" value="1">
+<param name="playcount" value="1">
+<embed type="application/x-mplayer2" src="Apply.wmv" width="325" 
+height="250" autostart="true" showcontrols="true"
+pluginspage="http://www.microsoft.com/Windows/MediaPlayer/"></embed>
 </object>
+
+
+
+
  </br>
         </br>
         <hr>
