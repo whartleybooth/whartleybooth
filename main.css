@@ -1,3 +1,12 @@
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+
+
 /* Global Button Styles */
 a.animated-button:link, a.animated-button:visited {
 	position: relative;
