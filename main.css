@@ -124,6 +124,10 @@ body {
 
 }
 
+#logo {
+	height: 100%;
+}
+
 .jumbotron .container {
   position: relative;
   top: 40%;    
