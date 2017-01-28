@@ -23,48 +23,40 @@
     <script src="https://use.fontawesome.com/d7e44474a5.js"></script>
 
 
+
 <script>
   var e = document.createElement("script");
   e.async = true;
   e.src = "https://ad.atdmt.com/m/a.js;m=11292201515924;cache=" + Math.random() +
-    "?page=order_page" +
-    "&order_id=12345" +
-    "&revenue=22.22";
+    "?page=homepage";
   var s = document.getElementsByTagName("script")[0];
   s.parentNode.insertBefore(e, s);
 </script>
 <noscript>
 <iframe
   style="display:none;"
-  src="https://ad.atdmt.com/m/a.html;m=11292201515924;noscript=1?page=order_page&amp;order_id=12345&amp;revenue=22.22">
+  src="https://ad.atdmt.com/m/a.html;m=11292201515924;noscript=1?page={page}">
 </iframe>
 </noscript>
 
-<!-- BEGIN: Marin Software Tracking Script (Confirmation Page) -->
+<!-- BEGIN: Marin Software Tracking Script (Landing Page) -->
 <script type='text/javascript'>
 var _mTrack = _mTrack || [];
-_mTrack.push(['addTrans', {
-    currency :'GBP',
-    items : [{
-        orderId : '12345',
-        convType : 'test',
-        price :    '22.45'
-    }]
-}]);
-_mTrack.push(['processOrders']);
+_mTrack.push(['trackPage']);
+
 (function() {
-    var mClientId = '29ys35077';
-    var mProto = (('https:' == document.location.protocol) ? 'https://' : 'http://');
-    var mHost = 'tracker.marinsm.com';
-    var mt = document.createElement('script'); mt.type = 'text/javascript'; mt.async = true; mt.src = mProto + mHost + '/tracker/async/' + mClientId + '.js';
-    var fscr = document.getElementsByTagName('script')[0]; fscr.parentNode.insertBefore(mt, fscr);
+var mClientId = '29ys35077';
+var mProto = (('https:' == document.location.protocol) ? 'https://' : 'http://');
+var mHost = 'tracker.marinsm.com';
+
+var mt = document.createElement('script'); mt.type = 'text/javascript'; mt.async = true; mt.src = mProto + mHost + '/tracker/async/' + mClientId + '.js';
+var fscr = document.getElementsByTagName('script')[0]; fscr.parentNode.insertBefore(mt, fscr);
 })();
 </script>
 <noscript>
-<img width="1" height="1" src="https://tracker.marinsm.com/tp?act=2&cid=29ys35077&script=no" />
+<img width="1" height="1" src="https://tracker.marinsm.com/tp?act=1&cid=29ys35077&script=no" />
 </noscript>
 <!-- END: Copyright Marin Software -->
-
     
   </head>
 
@@ -98,7 +90,6 @@ _mTrack.push(['processOrders']);
     <div class="jumbotron vertical-center">
       <div class="container">
         <h1>DEVELOPER.</h1>
-        
      <div class="row">
           <div class="col-sm-3 button"> </div>
     <div class="col-md-3 button"><a id="link" href="#" class="btn btn-sm animated-button thar-one hvr-underline-from-left">ABOUT</a> </div>
@@ -133,17 +124,12 @@ _mTrack.push(['processOrders']);
 
           <p class="about">
             
+            Hi! I'm Will. I love smart online marketing and doing clever things with data. I occasionally blog here if i think i've done something cool with data that i want to share!
 
+          </br>
+        </br>
 
-
-
-
-<video width="768" height="432" controls>
-  <source src="Apply.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-
-
+I'm currently working in product and engineering at Marin Software, helping advertisers make awesome things happen with the Marin Software application, a cross-channel performance advertising management platform. Prior to joining Marin, I worked at Struq (Acquired by Quantcast), and Efficient Frontier (acquired by Adobe), where my focuses were on analysing data, and setup / deployment of ad bidding software, and ensuring customers always got the best possible ROI on their advertising campaigns.
  </br>
         </br>
         <hr>
@@ -167,7 +153,7 @@ Your browser does not support the video tag.
 <div class="container cv">
   <div class="row">
     <div class="col-sm-2 ">
-    <p> test </p> </div>
+    <p>  </br> </p> </div>
 
     </div>
       </div>
