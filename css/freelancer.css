@@ -114,7 +114,7 @@ header .intro-text .skills {
   }
 }
 .navbar-custom {
-  background: #2C3E50;
+  background: #222222;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -196,7 +196,7 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-  background: #222222;
+  background: #18BC9C;
   color: white;
 }
 @media (max-width: 767px) {
