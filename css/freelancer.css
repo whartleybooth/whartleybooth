@@ -140,7 +140,7 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #FFFFFF;
+  color:  #A9A9A9;
   outline: none;
 }
 .navbar-custom .navbar-nav li a:focus,
@@ -149,7 +149,7 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-nav li.active a {
   color: white;
-  background: #FFFFFF;
+  background:   #A9A9A9;
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
@@ -197,7 +197,7 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-  background: #FFFFFF;
+  background: #18BC9C;
   color: white;
 }
 @media (max-width: 767px) {
