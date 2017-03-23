@@ -12,10 +12,10 @@
   <div class="controls">
 
     <!-- Manual Light Controls -->
+    <button id="caution_light_control" class="btn btn-warning">Generate Click</button>
     <button id="stop_light_control" class="btn btn-danger">Order Test</button>
-    <button id="caution_light_control" class="btn btn-warning">Example 2 (TBD)</button>
-    <button id="go_light_control" class="btn btn-success">Example 3 (TBD)</button>
-    <button id="info_light_control" class="btn btn-info">Example 4 (TBD)</button>
+    <button id="go_light_control" class="btn btn-success">TBD</button>
+    <button id="info_light_control" class="btn btn-info">TBD</button>
 
   <!-- Automatic Light Controls -->
   <!-- <button id="stop_control" class="btn btn-danger">Stop</button>
@@ -35,7 +35,7 @@
 
     var cautionButton = document.getElementById('caution_light_control');
     console.log('cautionButton', cautionButton);
-    stopButton.addEventListener('click',function() {
+    cautionButton.addEventListener('click',function() {
     insertParam('pnt1', 's5OV7lY0f');
     });
 
