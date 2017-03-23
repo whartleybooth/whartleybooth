@@ -23,30 +23,42 @@
 
   </div>
 
-  <script>
+<script type='text/javascript'>
     //You can put them in blocks like this (just like <style> tags)...
 
 
     var stopButton = document.getElementById('stop_light_control');
     console.log('stopButton', stopButton);
     stopButton.addEventListener('click',function() {
-    marinClick();
+    marinConv();
     });
 
-    function marinClick() {
+    function marinConv() {
+
       var _mTrack = _mTrack || [];
-      _mTrack.push(['trackPage']);
-
+      _mTrack.push(['addTrans', {
+          currency :'GBP',
+          items : [{
+              orderId : "'" + myFunction() + "'",
+              convType : '11002203120892',
+              price :    '@PRICE@'
+          }]
+      }]);
+      _mTrack.push(['processOrders']);
       (function() {
-      var mClientId = '24l339123';
-      var mProto = (('https:' == document.location.protocol) ? 'https://' : 'http://');
-      var mHost = 'tracker.marinsm.com';
-
-      var mt = document.createElement('script'); mt.type = 'text/javascript'; mt.async = true; mt.src = mProto + mHost + '/tracker/async/' + mClientId + '.js';
-      var fscr = document.getElementsByTagName('script')[0]; fscr.parentNode.insertBefore(mt, fscr);
+          var mClientId = '24l339123';
+          var mProto = (('https:' == document.location.protocol) ? 'https://' : 'http://');
+          var mHost = 'tracker.marinsm.com';
+          var mt = document.createElement('script'); mt.type = 'text/javascript'; mt.async = true; mt.src = mProto + mHost + '/tracker/async/' + mClientId + '.js';
+          var fscr = document.getElementsByTagName('script')[0]; fscr.parentNode.insertBefore(mt, fscr);
       })();
+
     }
 
+    function myFunction() {
+     var x = Math.floor((Math.random() * 10000000) + 1);
+     document.getElementById("demo").innerHTML = x;
+ }
 
   </script>
 
