@@ -27,15 +27,12 @@
   <script>
     //You can put them in blocks like this (just like <style> tags)...
     (function(){
-      var message = 'loaded from a script block';
-      try {
-        console.log(message);
-      } catch(e){
-        alert(message);
-      }
+      var stopButton = document.getElementById('stop_light_control');
+      console.log('stopButton', stopButton);
+
 
       // But we  prefer to do it with a reference to a local js file (again, just like style sheets)
-    }());
+    });
 
   </script>
 
