@@ -12,9 +12,9 @@
   <div class="controls">
 
     <!-- Manual Light Controls -->
-    <button id="caution_light_control" class="btn btn-warning">Generate Click</button>
-    <button id="stop_light_control" class="btn btn-danger">Order Test</button>
-    <button id="go_light_control" class="btn btn-success">TBD</button>
+    <button id="generate_click_control" class="btn btn-warning">Generate Click</button>
+    <button id="stop_light_control" class="btn btn-danger">Order Test 1</button>
+    <button id="case_order_id_example" class="btn btn-success">Order Test 2</button>
     <button id="info_light_control" class="btn btn-info">TBD</button>
 
   <!-- Automatic Light Controls -->
@@ -26,17 +26,24 @@
 <script type='text/javascript'>
     //You can put them in blocks like this (just like <style> tags)...
 
+    var clickButton = document.getElementById('generate_click_control');
+    console.log('Generate Test Click: s5OV7lY0f');
+    clickButton.addEventListener('click',function() {
+    insertParam('pnt1', 's5OV7lY0f');
+    });
 
-    var stopButton = document.getElementById('stop_light_control');
-    console.log('stopButton', stopButton);
-    stopButton.addEventListener('click',function() {
+    var test1Button = document.getElementById('stop_light_control');
+    console.log('Order Test 1 : Numerical Order ID');
+    test1Button.addEventListener('click',function() {
     marinConv();
     });
 
-    var cautionButton = document.getElementById('caution_light_control');
-    console.log('cautionButton', cautionButton);
-    cautionButton.addEventListener('click',function() {
-    insertParam('pnt1', 's5OV7lY0f');
+
+
+    var Test2Button = document.getElementById('case_order_id_example');
+    console.log('Order Test 2 : Numbers + Mixed Case Order ID');
+    Test2Button.addEventListener('click',function() {
+    marinConvMixedCase();
     });
 
 
@@ -48,6 +55,11 @@
    function myFunction() {
     var x = Math.floor((Math.random() * 10000000) + 1);
     return x;
+}
+
+function marinConvMixedCase() {
+  var track = new Image();
+   track.src="https://tracker.marinsm.com/tp?act=2&cid=24l339123&currency=&trans=UTM:I|" + myFunction() + "aA|order|product|category||";
 }
 
 function insertParam(key, value)
