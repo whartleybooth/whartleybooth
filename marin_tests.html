@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Traffic lights</title>
+  <title>Marin Tag Tests</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css">
 
 </head>
@@ -33,7 +33,7 @@
     });
 
     var test1Button = document.getElementById('stop_light_control');
-    console.log('Order Test 1 : Numerical Order ID');
+    console.log('Order Test 1 : Numerical Order ID Test');
     test1Button.addEventListener('click',function() {
     marinConv();
     });
@@ -41,7 +41,7 @@
 
 
     var Test2Button = document.getElementById('case_order_id_example');
-    console.log('Order Test 2 : Numbers + Mixed Case Order ID');
+    console.log('Order Test 2 : Numbers + Mixed Case Order ID Test');
     Test2Button.addEventListener('click',function() {
     marinConvMixedCase();
     });
@@ -49,7 +49,7 @@
 
    function marinConv() {
      var track = new Image();
-      track.src="https://tracker.marinsm.com/tp?act=2&cid=24l339123&currency=&trans=UTM:I|" + myFunction() + "|order|product|category||";
+      track.src="https://tracker.marinsm.com/tp?act=2&cid=62571g0b12611868&currency=&trans=UTM:I|" + myFunction() + "|order|product|category||";
    }
 
    function myFunction() {
@@ -59,7 +59,7 @@
 
 function marinConvMixedCase() {
   var track = new Image();
-   track.src="https://tracker.marinsm.com/tp?act=2&cid=24l339123&currency=&trans=UTM:I|" + myFunction() + "aA|order|product|category||";
+   track.src="https://tracker.marinsm.com/tp?act=2&cid=62571g0b12611868&currency=&trans=UTM:I|" + myFunction() + "aA|order|product|category||";
 }
 
 function insertParam(key, value)
@@ -94,7 +94,7 @@ function insertParam(key, value)
   _mTrack.push(['trackPage']);
 
   (function() {
-  var mClientId = '24l339123';
+  var mClientId = '62571g0b12611868';
   var mProto = (('https:' == document.location.protocol) ? 'https://' : 'http://');
   var mHost = 'tracker.marinsm.com';
 
@@ -103,7 +103,7 @@ function insertParam(key, value)
   })();
   </script>
   <noscript>
-  <img width="1" height="1" src="https://tracker.marinsm.com/tp?act=1&cid=24l339123&script=no" />
+  <img width="1" height="1" src="https://tracker.marinsm.com/tp?act=1&cid=62571g0b12611868&script=no" />
   </noscript>
   <!-- END: Copyright Marin Software -->
 
