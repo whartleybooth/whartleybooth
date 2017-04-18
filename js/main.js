@@ -3,8 +3,14 @@ $(function(){
   $('#generate_click_callback').click(function() {
 
   console.log('test');
-   marinClickCall();
+   // marinClickCall();
 
+   var rum = {
+           navigation: 1,
+           act: 1
+       };
+   rum = reduce(rum);
+   navigator.sendBeacon('https://tracker.marinsm.com/tp', JSON.stringify(rum));
 
 
   })
