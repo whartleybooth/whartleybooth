@@ -9,7 +9,6 @@ $(function(){
            navigation: 1,
            act: 1
        };
-   rum.reduce()
    navigator.sendBeacon('https://tracker.marinsm.com/tp', JSON.stringify(rum));
 
 
