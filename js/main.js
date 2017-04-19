@@ -11,7 +11,7 @@ $(function(){
 function marinSendBeacon(event) {
     var data = JSON.stringify({
       act: 2,
-      conv_type: dataLayer[0].transactionId
+      conv_type: "order",
       order_id: dataLayer[0].transactionId
     });
     navigator.sendBeacon('https://tracker.marinsm.com/tp', data);
