@@ -1,8 +1,8 @@
 $(function(){
 
-  $('#generate_click_callback').click(function() {
+  $('#generate_sendBeacon').click(function() {
 
-    generate_sendBeacon();
+    marinSendBeacon();
 
   })
 });
