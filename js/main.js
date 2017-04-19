@@ -10,8 +10,9 @@ $(function(){
 
 function marinSendBeacon(event) {
     var data = JSON.stringify({
-      act: 1,
-      conv_type: dataLayer.transactionId
+      act: 2,
+      conv_type: dataLayer[0].transactionId
+      order_id: dataLayer[0].transactionId
     });
     navigator.sendBeacon('https://tracker.marinsm.com/tp', data);
   }
