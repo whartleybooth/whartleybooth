@@ -2,15 +2,6 @@ $(function(){
 
   $('#bencock').click(function() {
 
-    var img = new Image();
-   var div = document.getElementById('controls');
-
-img.onload = function() {
-  div.appendChild(img);
-};
-
-img.src = '/cockeral-strutting-457396.jpg';
-
-   
+   document.write('<img border="0" src="cockeral-strutting-457396.jpg" />');
   })
 });
