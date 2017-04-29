@@ -21,7 +21,23 @@
   <!-- Automatic Light Controls -->
   <!-- <button id="stop_control" class="btn btn-danger">Stop</button>
   <button id="go_control" class="btn btn-success">Go</button> -->
+  <script type='text/javascript'>
+  var _mTrack = _mTrack || [];
+  _mTrack.push(['trackPage']);
 
+  (function() {
+  var mClientId = '24l339123';
+  var mProto = (('https:' == document.location.protocol) ? 'https://' : 'http://');
+  var mHost = 'tracker.marinsm.com';
+
+  var mt = document.createElement('script'); mt.type = 'text/javascript'; mt.async = true; mt.src = mProto + mHost + '/tracker/async/' + mClientId + '.js';
+  var fscr = document.getElementsByTagName('script')[0]; fscr.parentNode.insertBefore(mt, fscr);
+  })();
+  </script>
+  <noscript>
+  <img width="1" height="1" src="https://tracker.marinsm.com/tp?act=1&cid=24l339123&script=no" />
+  </noscript>
+  
   </div>
 
 <script type='text/javascript'>
@@ -90,22 +106,7 @@ function insertParam(key, value)
   </script>
 
   <!-- BEGIN: Marin Software Tracking Script (Landing Page) -->
-  <script type='text/javascript'>
-  var _mTrack = _mTrack || [];
-  _mTrack.push(['trackPage']);
 
-  (function() {
-  var mClientId = '24l339123';
-  var mProto = (('https:' == document.location.protocol) ? 'https://' : 'http://');
-  var mHost = 'tracker.marinsm.com';
-
-  var mt = document.createElement('script'); mt.type = 'text/javascript'; mt.async = true; mt.src = mProto + mHost + '/tracker/async/' + mClientId + '.js';
-  var fscr = document.getElementsByTagName('script')[0]; fscr.parentNode.insertBefore(mt, fscr);
-  })();
-  </script>
-  <noscript>
-  <img width="1" height="1" src="https://tracker.marinsm.com/tp?act=1&cid=24l339123&script=no" />
-  </noscript>
   <!-- END: Copyright Marin Software -->
 
 
