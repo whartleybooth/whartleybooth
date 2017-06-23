@@ -14,7 +14,7 @@ $(function(){
 
 
      var track = new Image();
-     track.src="https://tracker.marinsm.com/tp?act=2&cid=2764ri918980&currency=GBP&trans=UTM:I|" +  dataLayer[0].transaction_timestamp + dataLayer[0].transactionId + "|lifeclickout|||" + dataLayer[0].transactionTotal + "|";
+     track.src="https://tracker.marinsm.com/tp?act=2&cid=2764ri918980&currency=GBP&trans=UTM:I|" +  dataLayer[0].transaction_timestamp + dataLayer[0].transactionId + "|lifeclickout|||" + dataLayer[0].msmid + "|";
 
     test(dataLayer[0].transaction_timestamp)
 
