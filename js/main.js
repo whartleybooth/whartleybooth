@@ -15,7 +15,7 @@ $(function(){
      var time = Date.now()
 
 
-     marinImage();
+     marinImage(time);
 
 });
 });
