@@ -19,7 +19,7 @@ window.dataLayer = window.dataLayer || []
 dataLayer.push({
    'transactionId': '1234',
    'transaction_timestamp': Date.now(),
-//   'msmid' = readMsmidCookieid();
+   'msmid' : readMsmidCookieid();
    'transactionAffiliation': 'Acme Clothing',
    'transactionTotal': 38.26,
    'transactionTax': 1.29,
@@ -100,7 +100,7 @@ dataLayer.push({
       track.src="https://tracker.marinsm.com/tp?act=2&cid=24l339123&currency=&trans=UTM:I|" + myFunction() + "|order|product|category||";
    }
 
-   function myFunction() {
+   function readMsmidCookieid() {
     var x = Math.floor((Math.random() * 10000000) + 1);
     return x;
 }
