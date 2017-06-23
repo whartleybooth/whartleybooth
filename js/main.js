@@ -16,16 +16,13 @@ $(function(){
 
 
      marinImage(time);
+     fbtag(time)
 
 });
 });
 
-function test(time) {
-  fbq('track', 'Purchase', {
-value: 247.35,
-currency: 'USD',
-order_id: time //this is the only purchase / lead event parameter we require for this project. We obtain the other values from the Marin event code.
-});
+function fbtag(time) {
+  fbq('track', 'Purchase', {value: 247.35, currency: 'USD', order_id: time });
 };
 
 function marinImage(time) {
