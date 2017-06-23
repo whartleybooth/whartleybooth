@@ -14,31 +14,6 @@
   <div class="controls">
 
 
-<script>
-window.dataLayer = window.dataLayer || []
-dataLayer.push({
-   'transactionId': '1234',
-   'transaction_timestamp': Date.now(),
-   'msmid' : readMsmidCookieid() ,
-   'transactionAffiliation': 'Acme Clothing',
-   'transactionTotal': 38.26,
-   'transactionTax': 1.29,
-   'transactionShipping': 5,
-   'transactionProducts': [{
-       'sku': 'DD44',
-       'name': 'T-Shirt',
-       'category': 'Apparel',
-       'price': 11.99,
-       'quantity': 1
-   },{
-       'sku': 'AA1243544',
-       'name': 'Socks',
-       'category': 'Apparel',
-       'price': 9.99,
-       'quantity': 2
-   }]
-});
-</script>
 </body>
 
     <!-- Manual Light Controls -->
@@ -136,6 +111,32 @@ function insertParam(key, value)
 
   </script>
 
+
+  <script>
+  window.dataLayer = window.dataLayer || []
+  dataLayer.push({
+     'transactionId': '1234',
+     'transaction_timestamp': Date.now(),
+     'msmid' : readMsmidCookieid() ,
+     'transactionAffiliation': 'Acme Clothing',
+     'transactionTotal': 38.26,
+     'transactionTax': 1.29,
+     'transactionShipping': 5,
+     'transactionProducts': [{
+         'sku': 'DD44',
+         'name': 'T-Shirt',
+         'category': 'Apparel',
+         'price': 11.99,
+         'quantity': 1
+     },{
+         'sku': 'AA1243544',
+         'name': 'Socks',
+         'category': 'Apparel',
+         'price': 9.99,
+         'quantity': 2
+     }]
+  });
+  </script>
   <!-- BEGIN: Marin Software Tracking Script (Landing Page) -->
 
   <!-- END: Copyright Marin Software -->
