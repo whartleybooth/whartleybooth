@@ -12,8 +12,10 @@ $(function(){
 
   $('#msm_test').click(function() {
 
+     Date.now()
+
      var track = new Image();
-     track.src="https://tracker.marinsm.com/tp?act=2&cid=2764ri918980&currency=GBP&trans=UTM:I|" + dataLayer[0].transactionId + "aA|order|product|category|50.21|";
+     track.src="https://tracker.marinsm.com/tp?act=2&cid=2764ri918980&currency=GBP&trans=UTM:I|" + Date.now() + "|lifeclickout|||" + dataLayer[0].transactionTotal + "|";
 
   })
 });
