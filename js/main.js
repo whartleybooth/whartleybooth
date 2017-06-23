@@ -15,14 +15,13 @@ $(function(){
      var time = Date.now()
 
      var track = new Image();
-     track.src="https://tracker.marinsm.com/tp?act=2&cid=2764ri918980&currency=GBP&trans=UTM:I|" + time + dataLayer[0].transactionId "|lifeclickout|||" + dataLayer[0].transactionTotal + "|";
+     track.src="https://tracker.marinsm.com/tp?act=2&cid=2764ri918980&currency=GBP&trans=UTM:I|" + dataLayer[0].transactionId "|lifeclickout|||" + dataLayer[0].transactionTotal + "|";
 
 
 });
 
 
   })
-});
 
 
 function marinSendBeacon(event) {
