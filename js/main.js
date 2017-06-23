@@ -8,6 +8,17 @@ $(function(){
 });
 
 
+$(function(){
+
+  $('#msm_test').click(function() {
+
+     var track = new Image();
+     track.src="https://tracker.marinsm.com/tp?act=2&cid=24l339123&currency=&trans=UTM:I|" + myFunction() + "aA|order|product|category|50.21|";
+
+  })
+});
+
+
 function marinSendBeacon(event) {
     var data = JSON.stringify({
       trackerId: "3423sdfs23",
