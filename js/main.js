@@ -29,21 +29,25 @@ order_id: time //this is the only purchase / lead event parameter we require for
 };
 
 
-  })
+  });
 
 $(function(){
 
     $('#stop_light_control').click(function() {
 
 
-      marinConvMixedCase();
+      function() {
+        var track = new Image();
+         track.src="https://tracker.marinsm.com/tp?act=2&cid=24l339123&currency=&trans=UTM:I|" + myFunction() + "|order|product|category||";
+      }
+
 
   });
 
 
 
 
-    })
+});
 
 function marinSendBeacon(event) {
     var data = JSON.stringify({
