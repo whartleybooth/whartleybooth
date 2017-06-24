@@ -38,7 +38,7 @@ $(function(){
 
 
         var track = new Image();
-         track.src="https://tracker.marinsm.com/tp?act=2&cid=24l339123&currency=&trans=UTM:I|" + myFunction() + "|order|product|category||";
+         track.src="https://tracker.marinsm.com/tp?act=2&cid=24l339123&currency=&trans=UTM:I|" + readMsmidCookieid() + "|order|product|category||";
 
 
 
