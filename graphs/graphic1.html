@@ -12,7 +12,7 @@
 <div id="google" style="height: 250px;"></div>
 <div id="facebook" style="height: 250px;"></div>
 <div id="bing" style="height: 250px;"></div>
-
+<div id="offline" style="height: 250px;"></div>
 
 
     <script>
@@ -49,6 +49,18 @@ element: 'bing',
 data: [
 {label: "Unified Sales", value: 530, color: "#ffb900"},
   {label: "Non-Unified Sales", value: 50, color: "#ffb900"}
+],
+
+});
+
+new Morris.Donut({
+// ID of the element in which to draw the chart.
+element: 'offline',
+// Chart data records -- each entry in this array corresponds to a point on
+// the chart.
+data: [
+{label: "RUBOID Sales", value: 530, color: "#000000"},
+  {label: "Non-RUBOID Sales", value: 50, color: "#000000"}
 ],
 
 });
