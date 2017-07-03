@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>graph</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+  </head>
+  <body>
+<div id="google" style="height: 250px;"></div>
+<div id="facebook" style="height: 250px;"></div>
+<div id="bing" style="height: 250px;"></div>
+
+
+
+    <script>
+
+    new Morris.Donut({
+  // ID of the element in which to draw the chart.
+  element: 'google',
+  // Chart data records -- each entry in this array corresponds to a point on
+  // the chart.
+  data: [
+    {label: "Unified Sales", value: 930, color: "#3cba54"},
+      {label: "Non-Unified Sales", value: 400, color: "#3cba54"}
+  ],
+
+});
+
+new Morris.Donut({
+// ID of the element in which to draw the chart.
+element: 'facebook',
+// Chart data records -- each entry in this array corresponds to a point on
+// the chart.
+data: [
+{label: "Unified Sales", value: 500, color: "#3b5998"},
+  {label: "Non-Unified Sales", value: 400, color: "#3b5998"}
+],
+
+});
+
+new Morris.Donut({
+// ID of the element in which to draw the chart.
+element: 'bing',
+// Chart data records -- each entry in this array corresponds to a point on
+// the chart.
+data: [
+{label: "Unified Sales", value: 530, color: "#ffb900"},
+  {label: "Non-Unified Sales", value: 50, color: "#ffb900"}
+],
+
+});
+
+</script>
+
+
+
+  </body>
+</html>
