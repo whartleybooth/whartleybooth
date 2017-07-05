@@ -125,6 +125,7 @@
   element: 'google',
   // Chart data records -- each entry in this array corresponds to a point on
   // the chart.
+  formatter: function (value, data) { return (value/100 * 100) + '%'; },
   data: graph_data
 
 });
