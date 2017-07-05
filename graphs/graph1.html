@@ -55,7 +55,7 @@
             <div class="col-lg-12 text-center">
 
               <div class="jumbotron"><h1>TruePath Connect</h1>
-    <p>This pie chart will show the percent of a customers orders that been unified with one or more Marin TruePath Partners.</p>
+    <p>This pie chart will show the percent of a customers orders that been unified with one or more Marin TruePath Cross-Device Partners.</p>
         <div class="actual-chart" id="google"></div>
   </div>
 
@@ -75,8 +75,8 @@
   // the chart.
   formatter: function (value, data) { return (value/100 * 100) + '%'; },
   data: [
-    {label: "Unified", value: 60, color: "#5fa8c4"},
-        {label: "Non-Unified", value: 40, color: "#eff6f9"}
+    {label: "Matched", value: 60, color: "#5fa8c4"},
+        {label: "Not Matched", value: 40, color: "#eff6f9"}
   ],
 
 });
