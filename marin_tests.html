@@ -22,12 +22,28 @@
     <button id="generate_click_callback" class="btn btn-warning">Generate Click Callback</button>
     <button id="stop_light_control" class="btn btn-danger">Order Test 1</button>
     <button id="case_order_id_example" class="btn btn-success">Order Test 2</button>
+      <button id="new_beacon" class="btn btn-success">Order Test 2</button>
     <a href="marin_conversion.html" class="btn">Conversion Page</a>
     </div>
 
   <!-- Automatic Light Controls -->
   <!-- <button id="stop_control" class="btn btn-danger">Stop</button>
   <button id="go_control" class="btn btn-success">Go</button> -->
+
+
+<script>
+  // emit non-blocking beacon to record client-side event
+  function reportEvent(event) {
+    var data = JSON.stringify({
+      event: event,
+      time: performance.now()
+    });
+    navigator.sendBeacon('http://tracker.marinsm.com/rd', data);
+  }
+  </script>
+
+
+
   <script type='text/javascript'>
   var _mTrack = _mTrack || [];
   _mTrack.push(['trackPage']);
@@ -52,6 +68,10 @@
     clickButton.addEventListener('click',function() {
     insertParam('mkwid', 's5OV7lY0f');
     });
+
+    var clickButton = document.getElementById('new_beacon');
+    console.log('Generate Click: beacon');
+    clickButton.addEventListener('click', reportEvent(););
 
 
     var Test2Button = document.getElementById('case_order_id_example');
