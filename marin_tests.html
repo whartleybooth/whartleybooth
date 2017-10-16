@@ -73,10 +73,11 @@
     console.log('Generate Click: beacon');
     clickButton.addEventListener('click', function reportEvent(event) {
       var data = JSON.stringify({
-        event: event,
+        cid:
+        act: 1,
         time: performance.now()
       });
-      navigator.sendBeacon('http://tracker.marinsm.com/rd', data);
+      navigator.sendBeacon('http://tracker.marinsm.com/rd?cid=529mfo3381&mkwid=sfkp3bBG8_dm&pcrid=12344&slid=', data);
     });
 
 
