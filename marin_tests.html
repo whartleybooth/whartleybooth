@@ -71,7 +71,13 @@
 
     var clickButton = document.getElementById('new_beacon');
     console.log('Generate Click: beacon');
-    clickButton.addEventListener('click', reportEvent(event) );
+    clickButton.addEventListener('click', function reportEvent(event) {
+      var data = JSON.stringify({
+        event: event,
+        time: performance.now()
+      });
+      navigator.sendBeacon('http://tracker.marinsm.com/rd', data);
+    });
 
 
     var Test2Button = document.getElementById('case_order_id_example');
