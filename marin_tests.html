@@ -14,7 +14,7 @@
   <div class="controls">
 
 
-
+<h2> Button Tests </h2>
 
     <!-- Manual Light Controls -->
     <button id="msm_test" class="btn btn-warning">msm button</button>
@@ -77,7 +77,7 @@
         act: 1,
         time: performance.now()
       });
-      navigator.sendBeacon('http://tracker.marinsm.com/tp?cid=24l339123&mkwid=sfkp3bBG8_dm&pcrid=12344&cookie={m_uid}&test=true', data);
+      navigator.sendBeacon('http://tracker.marinsm.com/', data);
     });
 
     var clickButton = document.getElementById('new_beacon_2');
