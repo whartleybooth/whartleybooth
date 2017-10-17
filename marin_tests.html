@@ -24,6 +24,7 @@
       cid:232232dsds23,
       mkwid:232ds323,
       pcrid: 123253645
+
     });
     navigator.sendBeacon('http://tracker.marinsm.com/rd', data);
   }</code>
@@ -97,12 +98,14 @@
     clickButton.addEventListener('click', function reportEvent(event) {
       var data = JSON.stringify({
         act: 1,
-        cid:232232dsds23,
-        mkwid:232ds323,
+        cid: '232232dsds23',
+        mkwid: '232ds323',
         pcrid: 123253645
       });
       navigator.sendBeacon('http://tracker.marinsm.com/rd', data);
     });
+
+
 
     var clickButton = document.getElementById('new_beacon_2');
     console.log('Generate Click: beacon 2');
