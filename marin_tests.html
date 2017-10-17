@@ -16,7 +16,24 @@
 <div>
   <div class="jumbotron">
   <h2> SendBeacon Tests </h2>
-  <p class="lead">The below button is an example of sendBeacon</p>
+  <p class="lead">The below button is an example of a proper implementation of sendBeacon</p>
+  <hr class="my-4">
+  <code> function reportEvent(event) {
+    var data = JSON.stringify({
+      act: 1,
+      cid:232232dsds23,
+      mkwid:232ds323,
+      pcrid: 123253645
+
+    });
+    navigator.sendBeacon('http://tracker.marinsm.com/rd', data);
+  }</code>
+  <p class="lead">
+    </br>
+    </br>
+    <button id="new_beacon" class="btn btn-success">sendBeacon</button>
+  </p>
+  <p class="lead">The below button is an example of a proper implementation of sendBeacon</p>
   <hr class="my-4">
   <code> function reportEvent(event) {
     var data = JSON.stringify({
