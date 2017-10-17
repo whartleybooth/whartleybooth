@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Marin Tag Tests</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css">
+
+
+
+</head>
+
+<body>
+  <div class="controls">
+
+<div>
+  <div class="jumbotron">
+  <h2> SendBeacon Tests </h2>
+  <p class="lead">The below button is an example of a proper implementation of sendBeacon</p>
+  <hr class="my-4">
+  <code> function reportEvent(event) {
+    var data = JSON.stringify({
+      act: 1,
+      cid:'24l339123',
+      mkwid:'232ds323',
+      pcrid: 123253645
+
+    });
+    navigator.sendBeacon('http://tracker.marinsm.com/rd', data);
+  }</code>
+  <p class="lead">
+    </br>
+    </br>
+    <button id="new_beacon" class="btn btn-success">sendBeacon Test #1</button>
+  </p>
+  <p class="lead">The below button is an example of a proper implementation of sendBeacon</p>
+  <hr class="my-4">
+  <code> function reportEvent(event) {
+    var data = JSON.stringify({
+    });
+    navigator.sendBeacon('http://tracker.marinsm.com/rd?cid=1870765e38482&mkwid=seIEs444j-dc&productid=&', data);
+  }</code>
+  <p class="lead">
+    </br>
+    </br>
+    <button id="new_beacon_2" class="btn btn-success">sendBeacon Test #2</button>
+  </p>
+</div>
+
+
+
+
+
+
+  <!-- Automatic Light Controls -->
+  <!-- <button id="stop_control" class="btn btn-danger">Stop</button>
+  <button id="go_control" class="btn btn-success">Go</button> -->
+
+<script type='text/javascript'>
+    //You can put them in blocks like this (just like <style> tags)...
+
+
+    var clickButton = document.getElementById('new_beacon');
+    console.log('Generate Click: beacon');
+    clickButton.addEventListener('click', function reportEvent(event) {
+      var data = JSON.stringify({
+        act: 1,
+        cid: '232232dsds23',
+        mkwid: '232ds323',
+        pcrid: 123253645
+      });
+      navigator.sendBeacon('http://tracker.marinsm.com/rd', data);
+    });
+
+    var clickButton = document.getElementById('new_beacon_2');
+    console.log('Generate Click: beacon');
+    clickButton.addEventListener('click', function reportEvent(event) {
+        var data = JSON.stringify({
+        });
+        navigator.sendBeacon('http://tracker.marinsm.com/rd?cid=1870765e38482&mkwid=seIEs444j-dc&productid=&',  data);
+    });
+
+
+
+
+  <script>
+  window.dataLayer = window.dataLayer || []
+  dataLayer.push({
+     'transactionId': '1234',
+     'transaction_timestamp': Date.now(),
+     'msmid' : readMsmidCookieid() ,
+     'transactionAffiliation': 'Acme Clothing',
+     'transactionTotal': 38.26,
+     'transactionTax': 1.29,
+     'transactionShipping': 5,
+     'transactionProducts': [{
+         'sku': 'DD44',
+         'name': 'T-Shirt',
+         'category': 'Apparel',
+         'price': 11.99,
+         'quantity': 1
+     },{
+         'sku': 'AA1243544',
+         'name': 'Socks',
+         'category': 'Apparel',
+         'price': 9.99,
+         'quantity': 2
+     }]
+  });
+  </script>
+  <!-- BEGIN: Marin Software Tracking Script (Landing Page) -->
+
+  <!-- END: Copyright Marin Software -->
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="./js/main.js"></script>
+
+  <!-- Facebook Pixel Code -->
+
+</body>
+
+</html>
