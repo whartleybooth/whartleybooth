@@ -18,13 +18,13 @@
   <h2> SendBeacon Tests </h2>
   <p class="lead">The below button is an example of sendBeacon</p>
   <hr class="my-4">
-  <code> function reportEvent(event) { 
+  <code> function reportEvent(event) {
     var data = JSON.stringify({
       event: event,
       time: performance.now()
     });
     navigator.sendBeacon('http://tracker.marinsm.com/rd', data);
-  }</code>
+  }</code> </br>
   <p class="lead">
     <button id="new_beacon" class="btn btn-success">sendBeacon</button>
   </p>
