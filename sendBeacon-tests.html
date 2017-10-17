@@ -21,7 +21,7 @@
   <code> function reportEvent(event) {
     var data = JSON.stringify({
       act: 1,
-      cid:'1870765e38482',
+      cid:'24l339123',
       mkwid:'232ds323',
       pcrid: 123253645
 
@@ -29,7 +29,7 @@
     navigator.sendBeacon('http://tracker.marinsm.com/rd', data);
   }</code>
   <p class="lead">
-    </br>
+
     <button id="new_beacon" class="btn btn-success">sendBeacon Test #1</button>
   </p>
   <p class="lead">The below button is an example of a proper implementation of sendBeacon</p>
@@ -37,7 +37,7 @@
   <code> function reportEvent(event) {
     var data = JSON.stringify({
     });
-    navigator.sendBeacon('http://tracker.marinsm.com/rd?cid=1870765e38482&mkwid=seIEs444j-dc&productid=&', data);
+    navigator.sendBeacon('http://tracker.marinsm.com/rd?cid=24l339123&mkwid=seIEs444j-dc&productid=&', data);
   }</code>
   <p class="lead">
     </br>
@@ -64,7 +64,7 @@
     clickButton.addEventListener('click', function reportEvent(event) {
       var data = JSON.stringify({
         act: 1,
-        cid: '1870765e38482',
+        cid: '24l339123',
         mkwid: '232ds323',
         pcrid: 123253645
       });
@@ -76,7 +76,7 @@
     clickButton.addEventListener('click', function reportEvent(event) {
         var data = JSON.stringify({
         });
-        navigator.sendBeacon('http://tracker.marinsm.com/rd?cid=1870765e38482&mkwid=seIEs444j-dc&productid=&',  data);
+        navigator.sendBeacon('http://tracker.marinsm.com/rd?cid=24l339123&mkwid=seIEs444j-dc&productid=&',  data);
     });
   </script>
 
