@@ -44,7 +44,18 @@
 
     <button id="new_beacon_2" class="btn btn-success">sendBeacon Test #2</button>
   </p>
+  <p class="lead">The below button is an example of a implementation of sendBeacon continuing to use the request query string with lp parameter </p>
+  <hr class="my-4">
+  <code> function reportEvent(event) {
+    var data = JSON.stringify({
+    });
+    navigator.sendBeacon('http://tracker.marinsm.com/rd?cid=24l339123&mkwid=seIEs444jlp-dc&productid=&lp=http://www.test.com', data);
+  }</code>
+  <p class="lead">
+    </br>
 
+    <button id="new_beacon_3" class="btn btn-success">sendBeacon Test #3</button>
+  </p>
 </div>
 </div>
 
