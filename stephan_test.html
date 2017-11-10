@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Marin Tag Tests</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css">
+
+</head>
+
+<body>
+
+
+<script type="text/javascript">
+    var _mTrack = _mTrack || [];
+     _mTrack.push(['addTrans', {
+        orderId : '<ORDER-ID>',
+        total :   '<TOTAL>',
+ tax :     '<TAX>',
+ affiliation : '<AFFILIATION>',
+ shipping :'<SHIPPING>',
+ city :    '<CITY>',
+ state :   '<STATE>',
+ country : '<COUNTRY>',
+        currency :'<ISO-CURRENCY-CODE>',
+        items : [
+        	{
+         orderId : '<ORDER-ID>',
+	convType : '<CONV-TYPE-ID>',
+	product :  '<PRODUCT-SKU/NAME>',
+	price :    '<PRICE>',
+	category : '<CATEGORY>',
+	quantity : '<QUANTITY>'
+        	}
+
+    }]);
+
+    _mTrack.push(['processOrders']);
+    (function() {
+        var mClientId = '[CLIENT-TRACKING-ID]';
+        var mProto = ('https:' == document.location.protocol ? 'https://' : 'http://');
+        var mHost = 'tracker.marinsm.com';
+        var mt = document.createElement('script'); mt.type = 'text/javascript'; mt.async = true; mt.src = mProto + mHost + '/tracker/async/' + mClientId + '.js';
+        var fscr = document.getElementsByTagName('script')[0]; fscr.parentNode.insertBefore(mt, fscr);
+    })();
+</script>
+<noscript>
+    <img src="https://tracker.marinsm.com/tp?act=2&cid=[CLIENT-TRACKING-ID]&script=no" >
+</noscript>
+<!-- END: Copyright Marin Software -->
+</body>
+</html>
