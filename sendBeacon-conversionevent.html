@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Marin Tag Tests</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css">
+
+
+
+</head>
+
+<body>
+  <div class="controls">
+
+<div>
+  <div class="jumbotron">
+  <h2> SendBeacon Tests </h2>
+  <p class="lead">The below button is an example of a best practice implementation of sendBeacon</p>
+  <p class="lead">
+      </br>
+
+
+    <button id="new_beacon" class="btn btn-success">sendBeacon Test #1</button>
+  </p>
+
+  </p>
+</div>
+</div>
+
+
+
+<script type='text/javascript'>
+    //You can put them in blocks like this (just like <style> tags)...
+
+
+    var clickButton = document.getElementById('new_beacon');
+    console.log('Generate Conv: beacon');
+    clickButton.addEventListener('click', function marinConvMixedCase() {
+        var track = new Image();
+         track.src="https://tracker.marinsm.com/tp?act=2&cid=24l339123&currency=&trans=UTM:I|" + readMsmidCookieid() + "aA|order|product|category|50.21|";
+      };
+
+</script>
+
+
+
+  <script>
+  window.dataLayer = window.dataLayer || []
+  dataLayer.push({
+     'transactionId': '1234',
+     'transaction_timestamp': Date.now(),
+     'msmid' : 1 ,
+     'transactionAffiliation': 'Acme Clothing',
+     'transactionTotal': 38.26,
+     'transactionTax': 1.29,
+     'transactionShipping': 5,
+     'transactionProducts': [{
+         'sku': 'DD44',
+         'name': 'T-Shirt',
+         'category': 'Apparel',
+         'price': 11.99,
+         'quantity': 1
+     },{
+         'sku': 'AA1243544',
+         'name': 'Socks',
+         'category': 'Apparel',
+         'price': 9.99,
+         'quantity': 2
+     }]
+  });
+  </script>
+  <!-- BEGIN: Marin Software Tracking Script (Landing Page) -->
+
+  <!-- END: Copyright Marin Software -->
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="./js/main.js"></script>
+
+  <!-- Facebook Pixel Code -->
+
+</body>
+
+</html>
