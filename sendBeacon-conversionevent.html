@@ -10,11 +10,11 @@
 <body>
 <div>
   <div class="jumbotron">
-  <h2> SendBeacon - Conversion Fire </h2>
-  <p class="lead">The below button is an example of a best practice implementation of sendBeacon</p>
+  <h2>  Quantitea - Fire a Conversion Order Event </h2>
+  <p class="lead">The below button will fire an order conversion event for Quantitea. The order id will be randomly generated each time.</p>
   <p class="lead">
       </br>
-    <button id="new_beacon" class="btn btn-success">sendBeacon Conversion Fire</button>
+    <button id="new_beacon" class="btn btn-success">Fire Conversion Event (note down order id)</button>
   </p>
 </div>
 </div>
@@ -32,7 +32,7 @@
 
       function marinConvMixedCase() {
         var track = new Image();
-         track.src="https://tracker.marinsm.com/tp?act=2&cid=20j059120&currency=&trans=UTM:I|" + Math.floor((Math.random() * 1000000000) + 1) + "aA|order|product|category|100.00|";
+         track.src="https://tracker.marinsm.com/tp?act=2&cid=20j059120&currency=&trans=UTM:I|" + Math.floor((Math.random() * 1000000000) + 1) + "|order|product|category|100.00|";
       }
 
 
