@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <title>Hello, AMPs</title>
-    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html">
+    <link rel="canonical" href="http://www.whartleybooth.co.uk/amp-landing-page.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script type="application/ld+json">
       {
@@ -21,6 +21,14 @@
   </head>
   <body>
     <h1>Welcome to our test amp web page</h1>
-    <amp-img src="amp.jpeg" alt="Welcome" height="400" width="800"></amp-img>
+    <amp-img
+    src="/amp.jpeg"
+    srcset="/amp.jpeg 640w,
+           /amp.jpeg 320w"
+    width="1698"
+    height="2911"
+    layout="responsive"
+    alt="an image">
+</amp-img>
   </body>
 </html>
