@@ -20,7 +20,7 @@
 <!-- if not set, or set but not in-house format, then generate in-house format  -->
 <!-- else (already set and in-house format), leave as is -->
 
-window._mTrack.push(['writeCookie', '_msuuid_4128b6361336', '1234-5678-abc']);
+
 </script>
 
 
@@ -29,13 +29,14 @@ window._mTrack.push(['writeCookie', '_msuuid_4128b6361336', '1234-5678-abc']);
 <script type='text/javascript'>
 var _mTrack = _mTrack || [];
 _mTrack.push(['trackPage']);
+var mt = document.createElement('script'); mt.type = 'text/javascript'; mt.async = true; mt.src = mProto + mHost + '/tracker/async/' + mClientId + '.js';
+
 
 (function() {
 var mClientId = '4128b6361336';
 var mProto = (('https:' == document.location.protocol) ? 'https://' : 'http://');
 var mHost = 'tracker.marinsm.com';
-
-var mt = document.createElement('script'); mt.type = 'text/javascript'; mt.async = true; mt.src = mProto + mHost + '/tracker/async/' + mClientId + '.js';
+window._mTrack.push(['writeCookie', '_msuuid_4128b6361336', '1234-5678-abc']);
 var fscr = document.getElementsByTagName('script')[0]; fscr.parentNode.insertBefore(mt, fscr);
 })();
 </script>
