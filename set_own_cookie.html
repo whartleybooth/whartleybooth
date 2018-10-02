@@ -29,14 +29,13 @@
 <script type='text/javascript'>
 var _mTrack = _mTrack || [];
 _mTrack.push(['trackPage']);
-var mt = document.createElement('script'); mt.type = 'text/javascript'; mt.async = true; mt.src = mProto + mHost + '/tracker/async/' + mClientId + '.js';
+window._mTrack.push(['writeCookie', '_msuuid_4128b6361336', '1234-5678-abc']);
 
 
 (function() {
 var mClientId = '4128b6361336';
 var mProto = (('https:' == document.location.protocol) ? 'https://' : 'http://');
 var mHost = 'tracker.marinsm.com';
-window._mTrack.push(['writeCookie', '_msuuid_4128b6361336', '1234-5678-abc']);
 var fscr = document.getElementsByTagName('script')[0]; fscr.parentNode.insertBefore(mt, fscr);
 })();
 </script>
