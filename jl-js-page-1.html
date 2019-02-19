@@ -351,8 +351,12 @@
        */
       this.writeAndTestCookie = function(name, value, domainString) {
           this.writeCookie(name, value, domainString);
-          if (!getCookie(name)) {
-              return false;
+          // if (!getCookie(name)) {
+          //     return false;
+          // }
+          var cookie = getCookie(name);
+          if (!cookie || cookie != value) {
+            return false;
           }
           return true;
       };
