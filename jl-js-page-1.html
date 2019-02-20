@@ -351,11 +351,10 @@
        */
       this.writeAndTestCookie = function(name, value, domainString) {
           this.writeCookie(name, value, domainString);
-          // if (!getCookie(name)) {
-          //     return false;
-          // }
+
+          // Ensure cookie is set with proper value
           var cookie = getCookie(name);
-          if (!cookie || cookie != value) {
+          if (!cookie || cookie !== '' + value) {
             return false;
           }
           return true;
@@ -495,7 +494,9 @@
             /**
        * Decode amp client id (uuid) and set it in msuuid cookie
        */
-       this.useAmpClientId = function() {
+       this.useAmpClientId = function(queryKey, ampIdKey) {
+        queryKey = queryKey || '_ml';
+        ampIdKey = ampIdKey || 'marin_amp_id';
 
         // window.atob is needed to base64 decode amp client id.
         // amp client id is provided in the url query.
@@ -507,15 +508,16 @@
         var query = window.location.search.substring(1);
 
         var qs = parseQueryString(query);
-        var ml = qs._ml;
-        if (ml && typeof ml === 'string') {
-          // amp values are separated by *
-          var mlParams = ml.split('*');
+        var ampQueryParam = qs[queryKey];
+        if (ampQueryParam && typeof ampQueryParam === 'string') {
 
-          // amp client id is the value after marin_amp_id
-          var ampIdIndex = mlParams.indexOf('marin_amp_id');
-          if (ampIdIndex > -1 && mlParams.length > (ampIdIndex + 1)) {
-            var uuidRaw = mlParams[ampIdIndex + 1];
+          // amp values are separated by *
+          var ampValues = ampQueryParam.split('*');
+
+          // amp client id is the value after amp id key
+          var ampIdIndex = ampValues.indexOf(ampIdKey);
+          if (ampIdIndex > -1 && ampValues.length > (ampIdIndex + 1)) {
+            var uuidRaw = ampValues[ampIdIndex + 1];
 
             // Remove the appended dots at the end.
             if (uuidRaw && typeof uuidRaw === 'string') {
